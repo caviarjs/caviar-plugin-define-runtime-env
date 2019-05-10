@@ -26,7 +26,13 @@ $ npm i @caviar/plugin-define-runtime-env
 ## Usage
 
 ```js
-import @caviar/plugin_define_runtime_env from '@caviar/plugin-define-runtime-env'
+const RuntimeEnvPlugin = require('@caviar/plugin-define-runtime-env')
+
+const plugin = new RuntimeEnvPlugin({
+
+})
+
+caviarConfig.plugins.push(plugin)
 ```
 
 ## License

@@ -1,7 +1,7 @@
 {
   "name": "@caviar/plugin-define-runtime-env",
   "version": "1.0.0",
-  "description": "Caviar plugin to allows you to define process.env variables which can be configured at runtime for both webpack and server",
+  "description": "Caviar plugin to allows you to define `process.env` variables which can be configured at runtime for both webpack and server",
   "main": "src/index.js",
   "scripts": {
     "test": "NODE_DEBUG=@caviar/plugin-define-runtime-env nyc ava --timeout=10s --verbose",
@@ -35,10 +35,14 @@
   },
   "devDependencies": {
     "ava": "^1.4.1",
-    "codecov": "^3.3.0",
-    "nyc": "^13.3.0",
+    "codecov": "^3.4.0",
+    "nyc": "^14.1.1",
     "eslint-config-ostai": "^3.0.0",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.17.2",
     "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-environment-variables-to-getters": "^2.0.1",
+    "runtime-environment-webpack-plugin": "^1.0.2"
   }
 }
